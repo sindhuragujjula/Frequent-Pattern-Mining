@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2013 9:34:33 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="foreign.UserFeedback" table="user_feedback" catalog="fftt">
+        <id name="fid" type="string">
+            <column name="fid" length="25" />
+            <generator class="assigned" />
+        </id>
+        <property name="uid" type="string">
+            <column name="uid" length="25" not-null="true" />
+        </property>
+        <property name="dbid" type="string">
+            <column name="dbid" length="25" not-null="true" />
+        </property>
+        <property name="feedbackContent" type="string">
+            <column name="feedback_content" length="25" not-null="true" />
+        </property>
+        <property name="feedbackStarNo" type="int">
+            <column name="feedback_star_no" not-null="true" />
+        </property>
+        <property name="cdateoffeedback" type="string">
+            <column name="cdateoffeedback" length="50" not-null="true" />
+        </property>
+        <property name="feedbackstatus" type="string">
+            <column name="feedbackstatus" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="fftt"/>
+  <table-filter match-name="image_update"/>
+  <table-filter match-name="admin"/>
+  <table-filter match-name="location_data"/>
+  <table-filter match-name="status"/>
+  <table-filter match-name="booking_product_data"/>
+  <table-filter match-name="goods_data"/>
+  <table-filter match-name="user_data"/>
+  <table-filter match-name="category_data"/>
+  <table-filter match-name="subadmin"/>
+  <table-filter match-name="deliv_boy"/>
+  <table-filter match-name="user_feedback"/>
+</hibernate-reverse-engineering>

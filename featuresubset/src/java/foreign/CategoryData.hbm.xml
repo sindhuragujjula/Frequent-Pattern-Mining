@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2013 9:34:33 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="foreign.CategoryData" table="category_data" catalog="fftt">
+        <id name="cid" type="java.lang.Integer">
+            <column name="cid" />
+            <generator class="identity" />
+        </id>
+        <property name="categoryName" type="string">
+            <column name="category_name" length="25" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

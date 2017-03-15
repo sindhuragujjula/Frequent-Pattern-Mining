@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2013 9:34:33 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="foreign.DelivBoy" table="deliv_boy" catalog="fftt">
+        <id name="dbid" type="string">
+            <column name="dbid" length="25" />
+            <generator class="assigned" />
+        </id>
+        <property name="psw" type="string">
+            <column name="psw" length="50" not-null="true" />
+        </property>
+        <property name="SAdminid" type="string">
+            <column name="s_adminid" length="25" not-null="true" />
+        </property>
+        <property name="dname" type="string">
+            <column name="dname" length="25" not-null="true" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="25" not-null="true" />
+        </property>
+        <property name="lid" type="int">
+            <column name="lid" not-null="true" />
+        </property>
+        <property name="areaOfCoverage" type="string">
+            <column name="area_of_coverage" length="25" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="25" not-null="true" />
+        </property>
+        <property name="dailyDelvGoodsCapacity" type="int">
+            <column name="daily_delv_goods_capacity" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

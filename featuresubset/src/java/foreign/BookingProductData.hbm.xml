@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2013 9:34:33 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="foreign.BookingProductData" table="booking_product_data" catalog="fftt">
+        <id name="tid" type="java.lang.Integer">
+            <column name="tid" />
+            <generator class="identity" />
+        </id>
+        <property name="pid" type="string">
+            <column name="pid" length="25" not-null="true" />
+        </property>
+        <property name="uid" type="string">
+            <column name="uid" length="25" not-null="true" />
+        </property>
+        <property name="dateOfBooking" type="string">
+            <column name="date_of_booking" length="20" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="15" not-null="true" />
+        </property>
+        <property name="deliveryAddress" type="string">
+            <column name="delivery_address" length="25" not-null="true" />
+        </property>
+        <property name="noOfDaysOfDeliveryFromBooking" type="int">
+            <column name="no_of_days_of_delivery_from_booking" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

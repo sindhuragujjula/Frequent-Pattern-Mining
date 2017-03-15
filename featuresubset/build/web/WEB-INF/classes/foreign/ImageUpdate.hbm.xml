@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 24, 2013 9:34:33 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="foreign.ImageUpdate" table="image_update" catalog="fftt">
+        <id name="imageId" type="java.lang.Integer">
+            <column name="Image_id" />
+            <generator class="identity" />
+        </id>
+        <property name="pid" type="string">
+            <column name="pid" length="25" not-null="true" />
+        </property>
+        <property name="imageTitle" type="string">
+            <column name="image_title" length="25" not-null="true" />
+        </property>
+        <property name="imageUrl" type="string">
+            <column name="image_url" length="25" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/fftt</property>
+    <property name="hibernate.connection.username">root</property>
+ 
+    <mapping resource="foreign/DelivBoy.hbm.xml"/>
+    <mapping resource="foreign/LocationData.hbm.xml"/>
+    <mapping resource="foreign/BookingProductData.hbm.xml"/>
+    <mapping resource="foreign/Status.hbm.xml"/>
+    <mapping resource="foreign/Subadmin.hbm.xml"/>
+    <mapping resource="foreign/UserData.hbm.xml"/>
+    <mapping resource="foreign/ImageUpdate.hbm.xml"/>
+    <mapping resource="foreign/GoodsData.hbm.xml"/>
+    <mapping resource="foreign/Admin.hbm.xml"/>
+    <mapping resource="foreign/UserFeedback.hbm.xml"/>
+    <mapping resource="foreign/CategoryData.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
